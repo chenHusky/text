@@ -1,0 +1,22 @@
+# 创建名为.venv的虚拟环境
+PS D:\workspace\Python\VenvTest> python -m venv .venv
+
+# 启用虚拟环境
+PS D:\workspace\Python\VenvTest> .venv\Scripts\activate
+
+# 如果系统执行脚本策略为Restricted，则启用虚拟环境会报错，可通过如下命令解决：
+# (1) 查看系统执行脚本策略
+PS D:\workspace\Python\VenvTest> Get-ExecutionPolicy
+Restricted
+ 
+# (2) 修改系统执行脚本策略为Bypass
+PS D:\workspace\Python\VenvTest> Set-ExecutionPolicy Bypass
+
+# 升级pip
+(.venv) PS D:\workspace\Python\VenvTest> python -m pip install --upgrade pip
+
+# 安装依赖包
+(.venv) PS D:\workspace\Python\VenvTest> pip install -r requirements.txt
+
+# 停用虚拟环境
+(.venv) PS D:\workspace\Python\VenvTest> deactivate
