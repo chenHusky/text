@@ -1,0 +1,5 @@
+本地测试需在hosts文件中添加测试域名：
+编辑C:\Windows\System32\drivers\etc\hosts文件
+自己的IP		 测试地址：如 baidu.com
+
+然后通过 http://baidu.com/ 访问
