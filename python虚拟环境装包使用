@@ -18,5 +18,8 @@ PS D:\workspace\Python\VenvTest> Set-ExecutionPolicy Bypass
 # 安装依赖包
 (.venv) PS D:\workspace\Python\VenvTest> pip install -r requirements.txt
 
+# 启动环境
+(.venv) PS D:\workspace\Python\VenvTest> python manage.py runserver 0.0.0.0:8080
+
 # 停用虚拟环境
 (.venv) PS D:\workspace\Python\VenvTest> deactivate
