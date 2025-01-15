@@ -1,5 +1,10 @@
 本地测试需在hosts文件中添加测试域名：
 编辑C:\Windows\System32\drivers\etc\hosts文件
+格式：
 自己的IP		 测试地址：如 baidu.com
 
-然后通过 http://baidu.com/ 访问
+保存后windows+r打开cmd命令行输入ipconfig/flushdns刷新dns即映射完成
+然后通过 http://baidu.com 访问
+
+原理：系统在DNS域名解析前，会先读取本地hosts文件寻找对应的ip地址，如果匹配到则会立即打开对应网页
+
